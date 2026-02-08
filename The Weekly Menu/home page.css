@@ -1,0 +1,269 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+body {
+  background: #fffaf5;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+section {
+  padding: 70px 8%;
+}
+
+h1, h2, h3 {
+  color: #2b2b2b;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 18px 8%;
+}
+
+nav a {
+  font-weight: 600;
+  color: #444;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff7a18;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  display: inline-block;
+  background: #ff7a18;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255,122,24,0.3);
+}
+
+.btn.green {
+  background: #1fbf75;
+}
+
+.btn.green:hover {
+  box-shadow: 0 10px 20px rgba(31,191,117,0.3);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url("image/panner.jpeg") center/cover no-repeat;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.hero-btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   TRUST BAR
+========================= */
+
+.trust {
+  background: #ff7a18;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.service {
+  background: white;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.service h3 {
+  margin: 12px 0 6px;
+}
+
+/* =========================
+   MONTHLY PLAN
+========================= */
+
+.plan {
+  background: linear-gradient(135deg, #ff7a18, #ff9f45);
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  margin: 0 6%;
+}
+
+.plan h2 {
+  color: white;
+  font-size: 2.2rem;
+}
+
+.plan p {
+  margin: 12px 0 22px;
+  font-size: 1.1rem;
+}
+
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews {
+  text-align: center;
+}
+
+.review-box {
+  background: white;
+  max-width: 500px;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* =========================
+   BULK CTA
+========================= */
+
+.bulk-cta {
+  text-align: center;
+  background: #1fbf75;
+  color: white;
+  border-radius: 30px;
+  margin: 0 6%;
+}
+
+.bulk-cta h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 25px 10px;
+  margin-top: 60px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  section {
+    padding: 55px 6%;
+  }
+}
